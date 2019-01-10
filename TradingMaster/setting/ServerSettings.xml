@@ -2,6 +2,7 @@
 <config>
   <servers>
     <server type="JY">
+      <host name="方正中期" brokerID="0034"  ip="183.195.154.105"       port="28205" selected="True" />
       <host name="东航实盘一" brokerID="7070"  ip="ctp1.kiiik.com"       port="41205" selected="False" />
       <host name="东航实盘二" brokerID="7070"  ip="ctp2.kiiik.com"       port="41205" selected="False" />
       <host name="东航实盘三" brokerID="7070"  ip="192.168.101.243"      port="41205" selected="False" />
@@ -18,7 +19,7 @@
       <host name="实盘测试"   brokerID="7070"  ip="222.66.97.202"        port="41205" selected="False" />
       <host name="华西仿真一" brokerID="16377" ip="182.131.17.110"       port="62205" selected="False" />
       <host name="东航仿真一" brokerID="7070"  ip="192.168.3.190"        port="41205" selected="False" />
-      <host name="东航仿真二" brokerID="7070"  ip="222.66.97.241"        port="41205" selected="True" />
+      <host name="东航仿真二" brokerID="7070"  ip="222.66.97.241"        port="41205" selected="Fasle" />
       <host name="东航sim"    brokerID="0086"  ip="180.168.146.181"      port="10000" selected="False" />
       <host name="申万实盘三" brokerID="88888" ip="180.168.212.53"       port="41205" selected="False" />
       <host name="申万实盘四" brokerID="88888" ip="180.168.212.54"       port="41205" selected="False" />
@@ -50,6 +51,7 @@
       <host name="中融汇信实盘"       brokerID="6868"  ip="222.68.181.198"     port="41205" selected="False" />
     </server>
     <server type="HQ">
+      <host name="方正中期" brokerID="0034"  ip="180.166.0.225"     port="28213" selected="True" />
       <host name="东航实盘一" brokerID="7070"  ip="ctp1.kiiik.com"     port="41213" selected="False" />
       <host name="东航实盘二" brokerID="7070"  ip="ctp2.kiiik.com"     port="41213" selected="False" />
       <host name="东航实盘三" brokerID="7070"  ip="192.168.101.243"    port="41213" selected="False" />
@@ -66,7 +68,7 @@
       <host name="实盘测试"   brokerID="7070"  ip="222.66.97.202"      port="41213" selected="False" />
       <host name="华西仿真一" brokerID="16377" ip="182.131.17.110"     port="62213" selected="False" />
       <host name="东航仿真一" brokerID="7070"  ip="192.168.3.190"      port="41213" selected="False" />
-      <host name="东航仿真二" brokerID="7070"  ip="222.66.97.241"      port="41213" selected="True" />
+      <host name="东航仿真二" brokerID="7070"  ip="222.66.97.241"      port="41213" selected="Fasle" />
       <host name="东航sim"    brokerID="0086"  ip="180.168.146.181"    port="10100" selected="False" />
       <host name="申万实盘一" brokerID="88888" ip="180.168.212.51"     port="41213" selected="False" />
       <host name="申万实盘二" brokerID="88888" ip="180.168.212.52"     port="41213" selected="False" />
