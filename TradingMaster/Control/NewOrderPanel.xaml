@@ -119,8 +119,8 @@
                     <TextBlock Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Text="合 约" Grid.Row="1"></TextBlock>
                     <!--<TextBox x:Name="txtCode" FontWeight="Bold" FontSize="14" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Margin="0 0 50 0" Height="32" Width="150" TextChanged="txtCode_TextChanged" PreviewKeyDown="txtCode_KeyDown" MaxLength="20"></TextBox>-->
                     <!--<my:CodeComboBox StyleTag="order" Margin="0 0 50 0" VerticalAlignment="Center" x:Name="txtCode" Height="32" Width="150" FontWeight="Bold" FontSize="14" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" TextChanged="txtCode_TextChanged" PreviewKeyDown="txtCode_KeyDown" LostFocus="txtCode_LostFocus" />-->
-                    <TextBox Margin="0 3 0 4" VerticalAlignment="Center" x:Name="txtCode" Height="25"  FontWeight="Bold" FontSize="14" Grid.Column="1" Grid.Row="1" TextChanged="txtCode_TextChanged" PreviewKeyDown="txtCode_KeyDown" LostFocus="txtCode_LostFocus" VerticalContentAlignment="Center"/>
-                    <TextBlock Margin="12,4,4,4" x:Name="txtCodeName" Grid.Column="2" FontSize="14" FontWeight="Bold" Foreground="Gray" FontFamily="{DynamicResource fontResource}" />
+                    <TextBox Margin="0" VerticalAlignment="Center" x:Name="txtCode" Height="25"  FontWeight="Bold" FontSize="14" Grid.Column="1" Grid.Row="1" TextChanged="txtCode_TextChanged" PreviewKeyDown="txtCode_KeyDown" LostFocus="txtCode_LostFocus" VerticalContentAlignment="Center"/>
+                    <TextBlock Margin="12,0,4,0" x:Name="txtCodeName" Grid.Column="2" FontSize="14" FontWeight="Bold" Foreground="Gray" FontFamily="{DynamicResource fontResource}" />
                 </Grid>
             </StackPanel>
             <StackPanel Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2">
@@ -174,10 +174,10 @@
                         <ColumnDefinition Width="180" />
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="32" />
+                        <RowDefinition Height="24" />
                     </Grid.RowDefinitions>
                     <TextBlock Text="开 平" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-                    <RadioButton x:Name="rbKaicang" Grid.Column="1" GroupName="rbKp"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" Width="42" IsChecked="True" PreviewKeyDown="rbKaicang_KeyDown">
+                    <RadioButton x:Name="rbKaicang" Grid.Column="1" GroupName="rbKp"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" Width="42" IsChecked="True" PreviewKeyDown="rbKaicang_KeyDown" Padding="4,0,0,0">
                         <RadioButton.Content>
                             <TextBlock Text="开仓" Background="{Binding ElementName=rbKaicang,Path=Background}"></TextBlock>
                         </RadioButton.Content>
@@ -192,7 +192,7 @@
                             </Style>
                         </RadioButton.Style>
                     </RadioButton>
-                    <RadioButton x:Name="rbPingjin" Grid.Column="1" GroupName="rbKp" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="52,0,20,0" Width="42" PreviewKeyDown="rbPingjin_KeyDown">
+                    <RadioButton x:Name="rbPingjin" Grid.Column="1" GroupName="rbKp" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="52,0,20,0" Width="42" PreviewKeyDown="rbPingjin_KeyDown" Padding="4,0,0,0">
                         <RadioButton.Content>
                             <TextBlock Text="平今" Background="{Binding ElementName=rbPingjin,Path=Background}"></TextBlock>
                         </RadioButton.Content>
@@ -207,7 +207,7 @@
                             </Style>
                         </RadioButton.Style>
                     </RadioButton>
-                    <RadioButton x:Name="rbPingcang" Grid.Column="1" Grid.ColumnSpan="2" GroupName="rbKp" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="99,0,20,0" Width="42" PreviewKeyDown="rbPingcang_KeyDown">
+                    <RadioButton x:Name="rbPingcang" Grid.Column="1" Grid.ColumnSpan="2" GroupName="rbKp" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="99,0,20,0" Width="42" PreviewKeyDown="rbPingcang_KeyDown" Padding="4,0,0,0">
                         <RadioButton.Content>
                             <TextBlock Text="平仓" Background="{Binding ElementName=rbPingcang,Path=Background}"></TextBlock>
                         </RadioButton.Content>
@@ -237,12 +237,12 @@
                     </Grid.RowDefinitions>
                     <TextBlock Text="手 数" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     <!--<TextBox x:Name="txtNum" Grid.Column="1"></TextBox>-->
-                    <my:ValueUpDown FontWeight="Bold" FontSize="18" Grid.Column="1" x:Name="iudNum" Minimum="0" Maximum="10000000" VerticalAlignment="Stretch" Height="27" Margin="0 4 0 4"/>
+                    <my:ValueUpDown FontWeight="Bold" FontSize="18" Grid.Column="1" x:Name="iudNum" Minimum="0" Maximum="10000000" VerticalAlignment="Stretch" Height="27" Margin="0"/>
                 </Grid>
             </StackPanel>
             
             <StackPanel Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" PreviewKeyDown="iudNum_KeyDown">
-                <Grid Background="Transparent" Height="32">
+                <Grid Background="Transparent" Height="26">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="54" />
                         <ColumnDefinition Width="120" />
@@ -366,7 +366,7 @@
                     </Grid.RowDefinitions>
                     <TextBlock x:Name="tbTriggerPrice" Text="触发价" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                     <my:ValueUpDown x:Name="dudTriggerPrice" Grid.Column="1" VerticalAlignment="Stretch" AllowDrop="False"
-                                            FontWeight="Bold" FontSize="18" Maximum="1050000" Minimum="0" FormatString="F2" Height="27" Margin="0 6 0 6" />
+                                            FontWeight="Bold" FontSize="18" Maximum="1050000" Minimum="0" FormatString="F2" Height="27" Margin="0" />
                 </Grid>
             </StackPanel>
 
@@ -429,8 +429,8 @@
             </StackPanel>
 
             <Grid Grid.Row="10" Grid.ColumnSpan="3" Background="Transparent">
-                <Button x:Name="btnXiadan" Content="下   单" Margin="8,3,0,0" Height="30" Width="164" Click="btnXiadan_Click" PreviewKeyDown="btnXiadan_PreviewKeyDown" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Style="{DynamicResource btnDefault}"></Button>
-                <Button x:Name="btnMaidan" Content="预埋/条件" Margin="0,6,40,4" Click="btnMaidan_Click" Height="30" Width="75" HorizontalAlignment="Right" Style="{DynamicResource btnDefault}"></Button>
+                <Button x:Name="btnXiadan" Content="下   单" Margin="8,0,0,0" Height="30" Width="164" Click="btnXiadan_Click" PreviewKeyDown="btnXiadan_PreviewKeyDown" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Style="{DynamicResource btnDefault}"></Button>
+                <Button x:Name="btnMaidan" Content="预埋/条件" Margin="0,0,40,0" Click="btnMaidan_Click" Height="30" Width="75" HorizontalAlignment="Right" Style="{DynamicResource btnDefault}"></Button>
             </Grid>
             <Grid Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="2" Background="Transparent">
                 <CheckBox Name="btnNotify" Checked="btnNotify_Checked" Unchecked="btnNotify_Unchecked"  Margin="6,4,0,0"  Width="15" Height="15"  Grid.Row="7" Grid.Column="3" HorizontalAlignment="Left" IsChecked="True"/>

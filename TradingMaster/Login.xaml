@@ -45,11 +45,11 @@
                 <TextBlock Text="单账户登录" Foreground="{DynamicResource TradeTextBlock}" ></TextBlock>
             </RadioButton.Content>
         </RadioButton>
-        <!--<RadioButton Grid.Column="2" x:Name="rbMultiUser" Grid.Row="6" VerticalAlignment="Center" GroupName="rbLogin" Margin="120,0,0,0"  Checked="rbMultiUser_Checked">
+        <RadioButton Grid.Column="2" x:Name="rbMultiUser" Grid.Row="6" VerticalAlignment="Center" GroupName="rbLogin" Margin="120,0,0,0"  Checked="rbMultiUser_Checked">
             <RadioButton.Content>
                 <TextBlock Text="多账户登录" Foreground="{DynamicResource TradeTextBlock}" ></TextBlock>
             </RadioButton.Content>
-        </RadioButton>-->
+        </RadioButton>
 
         <TextBlock Grid.Column="1" Grid.Row="7" Text="柜台选择：" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="{DynamicResource TradeTextBlock}" />
         <RadioButton Grid.Column="2" x:Name="rbCtp" Grid.Row="7" VerticalAlignment="Center" GroupName="rbBackEnd" HorizontalAlignment="Left" IsChecked="True" Checked="rbCtp_Checked">

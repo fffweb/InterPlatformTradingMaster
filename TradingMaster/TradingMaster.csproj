@@ -363,8 +363,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MultiUserLogin.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="StatementOrderAffirm.xaml">
       <SubType>Designer</SubType>

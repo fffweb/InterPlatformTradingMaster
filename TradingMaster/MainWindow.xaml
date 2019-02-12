@@ -12,7 +12,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="60*"/>
-            <RowDefinition Height="60*"/>
+            <RowDefinition Height="50*"/>
             <RowDefinition Height="26"/>
         </Grid.RowDefinitions>
         <my:CapitalQuery x:Name="capitalQuery" Grid.Row="1"/>
@@ -58,7 +58,7 @@
                     <TabItem.Header>
                         <TextBlock Text="标准下单板" Style="{DynamicResource TabItemStyle}" />
                     </TabItem.Header>
-                    <my:NewOrderPanel x:Name="uscNewOrderPanel"  />
+                    <my:NewOrderPanel x:Name="uscNewOrderPanel" VerticalAlignment="Stretch" />
                 </TabItem>
                 <TabItem x:Name ="dcNewExecOrder" FlowDirection="LeftToRight" BorderThickness="0,1,0,0"  Style="{DynamicResource TabItemTriggerStyle}" IsSelected="True">
                     <TabItem.Header>
