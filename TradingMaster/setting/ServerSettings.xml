@@ -3,7 +3,7 @@
   <servers>
     <server type="JY">
       <host name="方正中期" brokerID="0034"  ip="183.195.154.105"       port="28205" selected="True" />
-      <host name="Simnow10011" brokerID="9999"  ip="180.168.146.187"     port="1000" selected="False" />
+      <host name="Simnow10011" brokerID="9999"  ip="180.168.146.187"     port="10001" selected="False" />
       <host name="Simnow移动" brokerID="9999"  ip="218.202.237.33"     port="10002" selected="False" />
       <host name="东航实盘一" brokerID="7070"  ip="ctp1.kiiik.com"       port="41205" selected="False" />
       <host name="东航实盘二" brokerID="7070"  ip="ctp2.kiiik.com"       port="41205" selected="False" />
